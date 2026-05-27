@@ -1,6 +1,6 @@
 import { QRCodeCanvas } from 'qrcode.react';
 
-export function QrPreview({ value, label, labelPosition }) {
+export function QrPreview({ value, label, labelPosition, labelSize }) {
   if (!value) {
     return (
       <div className="qr-canvas-empty">
@@ -12,7 +12,7 @@ export function QrPreview({ value, label, labelPosition }) {
   return (
     <div className="qr-canvas-outer">
       {label && labelPosition === 'above' && (
-        <div className="qr-code-label qr-code-label--above">{label}</div>
+        <div className="qr-code-label" style={{ fontSize: labelSize }}>{label}</div>
       )}
       <div className="qr-canvas-wrap">
         <QRCodeCanvas
@@ -25,7 +25,7 @@ export function QrPreview({ value, label, labelPosition }) {
         />
       </div>
       {label && labelPosition === 'below' && (
-        <div className="qr-code-label qr-code-label--below">{label}</div>
+        <div className="qr-code-label" style={{ fontSize: labelSize }}>{label}</div>
       )}
     </div>
   );
