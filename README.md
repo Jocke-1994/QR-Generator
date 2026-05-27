@@ -4,7 +4,7 @@ En snabb och minimalistisk QR-kodsgenerator med terminal-inspirerad estetik. Byg
 
 ## Live
 
-**[jocke-1994.github.io/QR-generator](https://jocke-1994.github.io/QR-generator)**
+**[jocke-1994.github.io/QR-Generator](https://jocke-1994.github.io/QR-Generator)**
 
 ---
 
